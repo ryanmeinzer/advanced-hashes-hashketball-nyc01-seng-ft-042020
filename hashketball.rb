@@ -132,7 +132,7 @@ def num_points_scored(player_name)
   game_hash.each do |place_key, item_hash|
     item_hash[:players].each do |item|
       if item[:player_name] == player_name
-            # binding.pry
+# binding.pry
         return item[:points]
       end
     end
@@ -141,7 +141,7 @@ end
 
 def shoe_size(player_name)
   game_hash.each do |place_key, item_hash|
-                # binding.pry
+# binding.pry
     item_hash[:players].each do |item|
       if item[:player_name] == player_name
         return item[:shoe]
@@ -152,7 +152,7 @@ end
 
 def team_colors(team_name)
   game_hash.each do |place_key, item_hash|
-    # binding.pry
+# binding.pry
     item_hash[:team_name].each do |item|
       if item[:team_name] == team_name
         return item[:colors]
