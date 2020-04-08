@@ -160,3 +160,13 @@ def team_colors(team_name)
     end
   end
 end
+
+def team_names
+  updated_array = []
+  game_hash.each do |place_key, item_hash|
+    item_hash[:team_name].each do |item|
+      updated_array << item
+    end
+    updated_array
+  end
+end
