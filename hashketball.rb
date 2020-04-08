@@ -170,3 +170,13 @@ def team_names
     updated_array
   end
 end
+
+def player_numbers(team_name)
+  game_hash.each do |place_key, item_hash|
+    item_hash[:team_name].each do |item|
+      if item == team_name
+        updated_array << item[:number]
+      end
+    end
+  end
+end
