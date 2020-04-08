@@ -160,9 +160,7 @@ end
 
 def team_names
   game_hash.collect do |place_key, item_hash|
-    item_hash[:team_name].each do |item|
-      item
-    end
+    item_hash[:team_name]
   end
 end
 #
