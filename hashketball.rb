@@ -132,8 +132,8 @@ def num_points_scored(player_name)
   game_hash.each do |place_key, item_hash|
     item_hash[:players].each |item|
       if item[:player_name] == player_name
-        return item[:points]
             binding.pry
+        return item[:points]
       end
   end
 end
