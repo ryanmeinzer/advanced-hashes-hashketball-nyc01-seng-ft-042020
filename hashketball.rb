@@ -128,11 +128,12 @@ def game_hash
   }
 end
 
-def num_points_scored(player)
-  game_hash.find do |place_key, item_hash|
+def num_points_scored(player_name)
+  game_hash.each do |place_key, item_hash|
     binding.pry
-    if item_hash[:players] == player
-      return
-    end
+    item_hash[:players].each |item|
+      if item[:player_name] == player_name
+        return item[:points]
+      end
   end
 end
