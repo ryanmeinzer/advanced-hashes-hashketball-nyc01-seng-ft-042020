@@ -65,8 +65,8 @@ def game_hash
       ]
     },
     away: {
-      team_name: "",
-      colors: [],
+      team_name: "Charlotte Hornets",
+      colors: ["Turquoise", "Purple"],
       players: [
         {
           player_name: "Jeff Adrien",
@@ -132,7 +132,7 @@ def num_points_scored(player)
   game_hash.find do |item|
     binding.pry
     if item[1][:players][0] == player
-      return item[1][:players][:points]
+      return
     end
   end
 end
