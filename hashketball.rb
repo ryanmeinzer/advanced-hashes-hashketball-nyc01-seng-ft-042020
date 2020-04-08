@@ -169,4 +169,5 @@ def player_numbers(team_name)
     if item_hash[:team_name] == team_name
       return item_hash[:number]
     end
+  end
 end
