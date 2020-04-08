@@ -152,7 +152,7 @@ end
 
 def team_colors(name)
   game_hash.each do |place_key, item_hash|
-    binding.pry
+    # binding.pry
     item_hash[:team_name].each do |item|
       if item[:team_name] == team_name
         return item[:colors]
