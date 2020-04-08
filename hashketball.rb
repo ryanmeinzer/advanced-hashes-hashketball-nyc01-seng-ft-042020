@@ -132,7 +132,7 @@ def num_points_scored(player)
   game_hash.find do |item|
     binding.pry
     if item[1][:players][0] == player
-      return item[1][:players][0][:points]
+      return item[1][:players][:points]
     end
   end
 end
