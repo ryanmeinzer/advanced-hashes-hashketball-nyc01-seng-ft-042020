@@ -150,7 +150,7 @@ def shoe_size(player_name)
   end
 end
 
-def team_colors(team_name)
+def team_colors(name)
   game_hash.each do |place_key, item_hash|
     binding.pry
     item_hash[:team_name].each do |item|
