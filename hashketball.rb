@@ -168,10 +168,8 @@ def player_numbers(team_name)
   game_hash.each do |place_key, item_hash|
     if item_hash[:team_name] == team_name
       item_hash.collect do |k, v|
-        item_hash[:number]
+        item_hash[:players][:number]
       end
     end
-    #   item_hash[:team_name].collect do |
-    #   item_hash[:number]
   end
 end
