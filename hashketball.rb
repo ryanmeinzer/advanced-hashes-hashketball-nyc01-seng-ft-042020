@@ -187,6 +187,9 @@ def player_stats(player_name)
   end
 end
 
-# def big_shoe_rebounds
-#   game_hash.find do |place_key, item_hash|
-# end
+def big_shoe_rebounds
+  biggest_shoe_size = 0
+  rebounds = 0
+  game_hash.find do |place_key, item_hash|
+    binding.pry
+end
