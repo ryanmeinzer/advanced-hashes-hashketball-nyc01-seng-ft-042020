@@ -190,7 +190,7 @@ end
 def big_shoe_rebounds
   biggest_shoe_size = 0
   rebounds = 0
-  game_hash.find do |place_key, item_hash|
+  game_hash.each do |place_key, item_hash|
     binding.pry
   end
 end
