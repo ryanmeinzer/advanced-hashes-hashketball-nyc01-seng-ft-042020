@@ -167,7 +167,7 @@ end
 def player_numbers(team_name)
   game_hash.each do |place_key, item_hash|
     if item_hash[:team_name] == team_name
-      item_hash[:players].collect(:number)
+      item_hash[:players].collect
       binding.pry
     end
     #   item_hash[:team_name].collect do |
