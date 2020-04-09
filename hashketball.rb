@@ -175,3 +175,10 @@ def player_numbers(team_name)
   end
   updated_array
 end
+
+def player_stats(player_name)
+  game_hash.collect do |place_key, item_hash|
+binding.pry
+    item_hash[:team_name]
+  end
+end
