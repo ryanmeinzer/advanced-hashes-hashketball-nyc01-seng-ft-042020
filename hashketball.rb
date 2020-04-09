@@ -182,5 +182,6 @@ def player_stats(player_name)
       if item[:player_name] == player_name
         return item
       end
+    end
   end
 end
