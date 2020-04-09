@@ -169,7 +169,7 @@ def player_numbers(team_name)
     if item_hash[:team_name] == team_name
       item_hash[:players].collect do |item|
         item[:number]
-                    binding.pry
+                    # binding.pry
       end
     end
   end
