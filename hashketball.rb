@@ -167,8 +167,9 @@ end
 def player_numbers(team_name)
   game_hash.each do |place_key, item_hash|
     if item_hash[:team_name] == team_name
-      item_hash.collect do |k, v|
-        item_hash[:players][:number]
+      item_hash.collect do |item|
+        binding.pry
+        item[:players][:number]
       end
     end
   end
