@@ -178,7 +178,9 @@ end
 
 def player_stats(player_name)
   game_hash.collect do |place_key, item_hash|
-binding.pry
-    item_hash[:team_name]
+    item_hash[:players].each do |item|
+      if item[:player_name] == player_name
+# binding.pry
+        return item[:points]
   end
 end
