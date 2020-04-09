@@ -166,10 +166,10 @@ end
 
 def player_numbers(team_name)
   game_hash.each do |place_key, item_hash|
-            binding.pry
     if item_hash[:team_name] == team_name
       item_hash[:players].collect do |item|
         [:number]
+                    binding.pry
       end
     end
   end
